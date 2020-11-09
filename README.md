@@ -1,6 +1,6 @@
-## Description
-*Insert here a brief description of the project, including, purpose, technologies used and context 
-where it was created.*
+## Descripción
+Este proyecto fue creado con el propósito de hacer una comparativa entre un sistema de trading basado en un modelo de redes neuronales con cobertura basada en opciones vainilla y lo que hacen los fondos de inversión dentro de los sistemas del retiro mexicano. Al hacer la comparativa esperamos que en base al proceso utilizado, los rendimientos para las personas que tengan este sistema de pensión sean mayores a las que tienen actualmente. Todo el proyecto está creado a base de Python.
+
 
 ## Install dependencies
 
@@ -28,10 +28,7 @@ I.F. Jaime Eduardo Vázquez Guzmán
 ## License
 **GNU General Public License v3.0** 
 
-*Permissions of this strong copyleft license are conditioned on making available 
-complete source code of licensed works and modifications, which include larger 
-works using a licensed work, under the same license. Copyright and license notices 
-must be preserved. Contributors provide an express grant of patent rights.*
+Los permisos de esta licencia están condicionados a poner a disposición el código fuente completo de los trabajos con licencia y las modificaciones, que incluyen trabajos más grandes que utilizan un trabajo con licencia, bajo la misma licencia. Se deben conservar los avisos de derechos de autor y licencias. Los contribuyentes proporcionan una concesión expresa de derechos de patente.
 
 ## Contacto
 Para tener mas información acerca de este repositorio y su funcionalidad podrá contacterse con cualquiera de estos correos.
