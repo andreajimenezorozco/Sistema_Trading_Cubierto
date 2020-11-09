@@ -15,15 +15,7 @@ Or you can manually install one by one using the name and version in the file.
 *Add here examples of core functionalities for the project in this repository.*
 
 ## Autores
-I.F. Carlos Alfonso Barboza Espinoza
-I.F. Israel Castillo Herrera
-I.F. Francisco Javier Enriquez Muñoz
-I.F. Andrea Jiménez Orozco
-
-I.F. Erendida Marin Haro
-I.F. Alberto Enrique Nuño Guevara
-I.F. Esteban Ortiz-Tirado González
-I.F. Jaime Eduardo Vázquez Guzmán
+I.F. Carlos Alfonso Barboza Espinoza / I.F. Israel Castillo Herrera / I.F. Francisco Javier Enriquez Muñoz / I.F. Andrea Jiménez Orozco / I.F. Erendida Marin Haro / I.F. Alberto Enrique Nuño Guevara / I.F. Esteban Ortiz-Tirado González / I.F. Jaime Eduardo Vázquez Guzmán
 
 ## License
 **GNU General Public License v3.0** 
