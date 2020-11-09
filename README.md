@@ -23,6 +23,15 @@ I.F. Carlos Alfonso Barboza Espinoza / I.F. Israel Castillo Herrera / I.F. Franc
 Los permisos de esta licencia están condicionados a poner a disposición el código fuente completo de los trabajos con licencia y las modificaciones, que incluyen trabajos más grandes que utilizan un trabajo con licencia, bajo la misma licencia. Se deben conservar los avisos de derechos de autor y licencias. Los contribuyentes proporcionan una concesión expresa de derechos de patente.
 
 ## Contacto
+¿Qué es Ingeniería Financiera?
+En Ingeniería Financiera aprendes a formular estrategias comerciales y proyectos de inversión que puedan asegurar la viabilidad y rentabilidad de los planes de generación de riqueza de empresas, gobiernos y particulares. Desarrollas competencias para construir modelos matemáticos de diferentes escenarios de negocio considerando los objetivos de los inversores y los riesgos que puedan surgir, permitiendo así que empresas y comunidades se transformen en espacios de bienestar y desarrollo.
+Aplicas los conocimientos adquiridos a problemas como el desarrollo de nuevos productos financieros, propones estrategias para estimular el crecimiento de las empresas, y tomas decisiones basadas en la ciencia de datos y la simulación de escenarios de negocio que convierten los riesgos en oportunidades de crecimiento y competitividad. 
+
+¿Qué es ITESO?
+ITESO es la Universidad Jesuita de Guadalajara. Fundada en 1957, pertenece a una red de más de 228 universidades jesuitas de todo el mundo. Todos comparten una tradición de 450 años de educación jesuita, una tradición que históricamente ha estado en el centro del pensamiento mundial, conocida por educar líderes en todos los campos de la ciencia y el arte.
+El ITESO es conocido por su excelencia académica, una profunda preocupación por los contextos tanto locales como globales, y su compromiso con la mejora de las condiciones de vida de las personas. Su proyecto educativo integral busca desarrollar la inteligencia y la sensibilidad, formar jóvenes libres y socialmente responsables de por vida, en un entorno ideal para el descubrimiento y el crecimiento.
+https://www.iteso.mx/
+
 Para tener mas información acerca de este repositorio y su funcionalidad podrá contacterse con cualquiera de estos correos.
 
 if709907@iteso.mx / if708348@iteso.mx / if712406@iteso.mx / if706970@iteso.mx / if705604@iteso.mx / if706898@iteso.mx / if708924@iteso.mx / if708412@iteso.mx
