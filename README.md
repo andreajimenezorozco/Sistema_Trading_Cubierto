@@ -34,8 +34,6 @@ must be preserved. Contributors provide an express grant of patent rights.*
 
 ## Contacto
 Para tener mas información acerca de este repositorio y su funcionalidad podrá contacterse con cualquiera de estos correos.
-if709907@iteso.mx / if708348@iteso.mx
-if712406@iteso.mx / if706970@iteso.mx
-if705604@iteso.mx / if706898@iteso.mx
-if708924@iteso.mx / if708412@iteso.mx
+
+if709907@iteso.mx / if708348@iteso.mx / if712406@iteso.mx / if706970@iteso.mx / if705604@iteso.mx / if706898@iteso.mx / if708924@iteso.mx / if708412@iteso.mx
 
