@@ -19,6 +19,7 @@ I.F. Carlos Alfonso Barboza Espinoza
 I.F. Israel Castillo Herrera
 I.F. Francisco Javier Enriquez Muñoz
 I.F. Andrea Jiménez Orozco
+
 I.F. Erendida Marin Haro
 I.F. Alberto Enrique Nuño Guevara
 I.F. Esteban Ortiz-Tirado González
