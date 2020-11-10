@@ -6,7 +6,15 @@
 # -- license: GPL-3.0 License                                                                            -- #
 # -- repository: YOUR REPOSITORY URL                                                                     -- #
 # -- --------------------------------------------------------------------------------------------------- -- #
-
 pandas>=1.1.0
-numpy>=1.19.1
-jupyter>=1.0.0
+ruptures
+oandapyV20>=0.6.3
+ipython==7.18.1
+jupyter==1.0.0
+requests==2.24.0
+pycodestyle==2.6.0
+numpy>=1.19.2
+sklearn
+yfinance>=0.1.55
+matplotlib>=3.3.2
+statsmodels
