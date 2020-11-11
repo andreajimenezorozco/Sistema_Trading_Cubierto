@@ -12,9 +12,7 @@ import data as dt
 import functions as fn
 
 #Leer los archivos
-param_ = "files/"
-archivo = "ME_2020.csv"
-data_t = dt.f_leer_archivo(param_+archivo)
+data_t = dt.load_data(start=2010, end=2020, freq='D')
 
 #crear variables artificiales - indicadores financieros y estadísticos
 data_t = fn.add_all_features(data_t)
