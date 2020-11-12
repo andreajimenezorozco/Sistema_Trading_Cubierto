@@ -247,16 +247,11 @@ def window(datos):
     mean = np.array(mean)  # Datos generados del metodo, traidos a un array.
     changes = mean.astype(int)  # Hacer que el array contenga solo valores numericos enteros.
 
-    fecha = []  # Lista vacia para introducir fechas donde el cambio ocurrio.
-    # For para introducir los valores de la fechas en donde ocurrieron los changepoints.
-    for i in range(0, len(my_bkps) - 1):
-        fecha += datos.index[changes[i]]
-
     # Esta variable sirve para crear el feature que se utilizará en el modelo.
     feature = boolean_change_point(data, changes)
 
     # La función regresa las fechas y los valores numericos en donde ocurrieron los cambios.
-    return fecha, changes, feature
+    return changes, feature
 
 
 def binary(data):
@@ -280,15 +275,10 @@ def binary(data):
 
     changes = mean.astype(int)  # Valores del array anterior convertidos a numeros enteros.
 
-    fecha = []  # Lista vacia para introducir fechas deseadas.
-    # For para introducir las fechas en donde ocurrio un cambio.
-    for i in range(0, len(my_bkps) - 1):
-        fecha += data.index[changes[i]]
-
     feature = boolean_change_point(datos, changes)
 
     # La función regresa las fechas y los cambios numericos.
-    return fecha, changes, feature
+    return changes, feature
 
 
 def pelt(data):
@@ -312,15 +302,10 @@ def pelt(data):
 
     changes = mean.astype(int)  # Valores del array anterior convertidos a numeros enteros.
 
-    fecha = []  # Lista vacia para introducir fechas deseadas.
-    # For para introducir las fechas en donde ocurrio un cambio.
-    for i in range(0, len(my_bkps) - 1):
-        fecha += data.index[changes[i]]
-
     feature = boolean_change_point(datos, changes)
 
     # La función regresa las fechas y los cambios numericos.
-    return fecha, changes, feature
+    return changes, feature
 
 #%%
 def add_all_features(df_pe):
@@ -356,9 +341,9 @@ def add_all_features(df_pe):
 def create(df_pe):
     df_pe = ps.math_transformations(df_pe)
     # Change Point Detection
-    #df_pe['Windows'] = window(df_pe)[2]
-    #df_pe['binary_c'] = binary(df_pe)[2]
-    #df_pe['pelt'] = pelt(df_pe)[2]
+    df_pe['Windows'] = window(df_pe)[1]
+    df_pe['binary_c'] = binary(df_pe)[1]
+    df_pe['pelt'] = pelt(df_pe)[1]
     df_pe['Label'] = next_day_ret(df_pe)[1]
     return df_pe
 
