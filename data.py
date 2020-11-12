@@ -10,19 +10,6 @@
 """
 import pandas as pd
 
-def f_leer_archivo(param_archivo: str):
-    # print(param_archivo[-4:])
-    if param_archivo[-3:] == 'csv':
-        data = pd.read_csv(param_archivo, low_memory=True)
-        return data
-    elif param_archivo[-4:] == 'xlsx' or param_archivo[-3:] == 'xls':
-        data = pd.read_excel(param_archivo)
-        return data
-    else:
-        data = "Ingresa un formato Excel válido"
-        return data
-
-
 def load_data(start: int = 2007, end: int = 2020, freq: str = 'D'):
     column_names = ["TimeStamp", "open", "high", "low", "close", "volume"]
     data = pd.DataFrame()

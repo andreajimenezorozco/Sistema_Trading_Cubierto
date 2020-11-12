@@ -11,16 +11,18 @@
 import data as dt
 import numpy as np
 import pandas as pd
-from preprocess import math_transformations
+import preprocess as ps
 from sklearn.feature_selection import VarianceThreshold
 from sklearn.feature_selection import f_classif
 import ruptures as rpt
-
+pd.options.mode.use_inf_as_na = True
+#%%
 param_ = "files/"
 archivo = "ME_2020.csv"
 
-df_pe = dt.f_leer_archivo(param_+archivo)
+df_pe = pd.read_csv(param_+archivo).iloc[0:2000,1:-1]
 #print(st.head())
+df_pe=df_pe.rename(columns={'close':'Close','open':'Open','high':'High','low':'Low'})
 
 # %% Add features
 
@@ -45,11 +47,12 @@ def add_fracdiff_features(df, threshold=1e-4):
 
     '''
     for col in df.columns:
-        _, series = least_diff(df[col], dRange=(0, 1), step=0.1,
+        _, series = ps.least_diff(df[col], dRange=(0, 1), step=0.1,
                                threshold=threshold, confidence='1%')  # threshold menor por ser una serie pequeña
         df[col + 'fdiff'] = series
     return df
 
+#%%
 ## Technical Indicators
 
 def CCI(data, ndays):
@@ -319,6 +322,7 @@ def pelt(data):
     # La función regresa las fechas y los cambios numericos.
     return fecha, changes, feature
 
+#%%
 def add_all_features(df_pe):
     # Add fracdiff features
     df_pe = add_fracdiff_features(df_pe, threshold=1e-4)
@@ -348,17 +352,23 @@ def add_all_features(df_pe):
 
 #df_pe = add_all_features(df_pe)
 
+#%%
 def create(df_pe):
-    df_pe = math_transformations(df_pe)
+    df_pe = ps.math_transformations(df_pe)
     # Change Point Detection
-    df_pe['Windows'] = window(df_pe)[2]
-    df_pe['binary_c'] = binary(df_pe)[2]
-    df_pe['pelt'] = pelt(df_pe)[2]
+    #df_pe['Windows'] = window(df_pe)[2]
+    #df_pe['binary_c'] = binary(df_pe)[2]
+    #df_pe['pelt'] = pelt(df_pe)[2]
     df_pe['Label'] = next_day_ret(df_pe)[1]
     return df_pe
 
 #df_pe = create(df_pe)
 
+#%%
+
+#df_pe = df_pe.fillna(df_pe.mean())
+
+#%%
 def ANOVA_importance(df,
                      sample: float,
                      VO: str):
@@ -411,3 +421,4 @@ def ANOVA_importance(df,
     return df
 
 #df_pe = ANOVA_importance(df_pe,0.79,'Label')
+    
